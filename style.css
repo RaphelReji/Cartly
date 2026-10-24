@@ -250,16 +250,30 @@ body{
   color: #088178;
 }
 
-#product1 .pro .cart{
+
+#product1 .pro {
+  position: relative;
+}
+
+#product1 .pro a.cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border-radius: 50px;
+  text-align: center;
+  border-radius: 50%;
   background-color: #e8f6ea;
-  font-weight: 500;
   color: #088178;
   border: 1px solid #cce7d0;
   position: absolute;
-  bottom: 20px; 
+  bottom: 20px;
   right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#product1 .pro a.cart i {
+  font-size: 16px;
+  color: #088178;
 }
