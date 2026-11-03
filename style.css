@@ -552,6 +552,10 @@ footer .copyright{
 /*media*/
 
 @media (max-width:799px) {
+
+  .section-p1{
+    padding: 40px 40px;
+  }
   #navbar{
     display: flex;
     flex-direction: column;
@@ -598,5 +602,27 @@ footer .copyright{
 
 #lg-bag{
   display: none;
+}
+
+#hero {
+    height: 70vh;
+    background-position: top 30% right 30%;
+    padding: 0 80px;
+}
+
+#feature {
+    justify-content: center;
+}
+
+#feature .fe-box {
+    margin: 15px 15px;
+}
+
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
 }
 }
