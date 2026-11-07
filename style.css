@@ -647,7 +647,9 @@ footer .copyright{
   color: #fff;
 }
 
-
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
 
 
 
