@@ -66,7 +66,7 @@ button.normal{
   font-weight: 600;
   padding:15px 30px ;
   color: #000;
-  background-color: #fff;
+  background-color: var(--color-button);
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -88,7 +88,14 @@ button.white{
 
 body{
   width: 100%;
-  
+  background-color: var(--color-surface);
+}
+
+.logo{
+  text-decoration: dotted;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
 }
 
 /* header start */
@@ -97,7 +104,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: #E3E6F2;
+  background: var(--color-background);
   box-shadow: 0 5px 15px rgba(0, 0, 0,0.06);
   z-index: 999;
   position: sticky;
@@ -204,6 +211,7 @@ body{
   border-radius: 4px;
   margin: 15px 0;
   transition: 0.3s;
+  background-color: var(--color-background);
 }
 
 #feature .fe-box:hover{
@@ -266,6 +274,7 @@ body{
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
+  background-color: var(--color-secondary);
 }
 
 #product1 .pro:hover{
@@ -460,7 +469,7 @@ body{
   background-image: url(img/banner/b14.png);
   background-repeat: no-repeat;
   background-position:20% 30% ;
-  background-color: #041e42;
+  background-color: var(--color-muted);
 }
 
 #newsletter h4{
@@ -508,6 +517,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: var(--color-accent);
 }
 
 footer .col{
