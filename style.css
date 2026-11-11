@@ -1,8 +1,28 @@
+:root {
+    --color-primary: #6B705C;
+    --color-secondary: #CB997E;
+
+    --color-background: #FFE8D6;
+    --color-surface: #DDBEA9;
+
+    --color-muted: #B7B7A4;
+    --color-accent: #A5A58D;
+
+    --color-text: #6B705C;
+    --color-border: #B7B7A4;
+
+    --color-button: #6B705C;
+    --color-button-hover: #CB997E;
+
+
+    --font-main: 'Sora', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Spartan',sans-serif;
+  font-family: var(--font-main);
 }
 
 h1{
@@ -68,6 +88,7 @@ button.white{
 
 body{
   width: 100%;
+  
 }
 
 /* header start */
