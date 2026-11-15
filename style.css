@@ -1,20 +1,23 @@
 :root {
-    --color-primary: #6B705C;
-    --color-secondary: #CB997E;
+    /* Brand colours */
+    --color-primary: #EC3750;
+    --color-secondary: #FF8C37;
+    --color-accent: #F1C40F;
 
-    --color-background: #FFE8D6;
-    --color-surface: #DDBEA9;
+    /* Backgrounds */
+    --color-background: #FFFFFF;
+    --color-surface: #F5F5F5;
 
-    --color-muted: #B7B7A4;
-    --color-accent: #A5A58D;
+    /* Text */
+    --color-text: #17171D;
+    --color-muted: #8492A6;
 
-    --color-text: #6B705C;
-    --color-border: #B7B7A4;
+    /* UI */
+    --color-border: #E5E7EB;
+    --color-button: #EC3750;
+    --color-button-hover: #D92D46;
 
-    --color-button: #6B705C;
-    --color-button-hover: #CB997E;
-
-
+    /* Typography */
     --font-main: 'Sora', sans-serif;
 }
 
@@ -95,7 +98,7 @@ body{
   text-decoration: dotted;
   font-size: 40px;
   font-weight: 700;
-  color: black;
+  color: var(--color-primary);
 }
 
 /* header start */
@@ -128,13 +131,13 @@ body{
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
+  color:var(--color-text);
   transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: var(--color-primary);
 }
 
 #navbar li a.active::after,
@@ -142,7 +145,7 @@ body{
   content: "";
   width: 30%;
   height: 2px;
-  background:#088178; 
+  background:var(--color-primary); 
   position: absolute;
   bottom: -4px;
   left: 20px;
