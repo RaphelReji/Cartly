@@ -27,6 +27,9 @@
   box-sizing: border-box;
   font-family: var(--font-main);
 }
+h1,h2,h3,h4,h5,h6{
+  color: var(--color-text);
+}
 
 h1{
   font-size: 50px;
@@ -52,7 +55,7 @@ h6{
 
 p{
   font-size: 16px;
-  color: #465b52;
+  color: var(--color-muted);
   margin: 15px 0 20px 0;
 }
 
@@ -91,7 +94,9 @@ button.white{
 
 body{
   width: 100%;
-  background-color: var(--color-surface);
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 .logo{
@@ -174,6 +179,7 @@ body{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  color: var(--color-text);
 }
 
 #hero h4{
@@ -181,7 +187,7 @@ body{
 }
 
 #hero h1{
-  color: #088178;
+  color: var(--color-primary);
 }
 
 #hero button{
@@ -210,14 +216,15 @@ body{
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border:1px solid #cce7d0;
+  border:1px solid var(--color-border);
   border-radius: 4px;
   margin: 15px 0;
   transition: 0.3s;
-  background-color: var(--color-background);
+  background-color: var(--color-surface);
 }
 
 #feature .fe-box:hover{
+  border-color: var(--color-primary);
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }  
 
@@ -270,22 +277,29 @@ body{
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  border: 1px solid var(--color-border);
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
-  background-color: var(--color-secondary);
+  background-color: var(--color-background);
 }
 
 #product1 .pro:hover{
+  transform: translateY(-5px);
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
 #product1 .pro img{
   width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #f5f5f5;
   border-radius: 20px;
 }
 
@@ -314,7 +328,7 @@ body{
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: #088178;
+  color: var(--color-primary);
 }
 
 
@@ -328,9 +342,9 @@ body{
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  background-color: #e8f6ea;
-  color: #088178;
-  border: 1px solid #cce7d0;
+  background-color: #f6e9e8;
+  color: var(--color-primary);
+  border: 1px solid #e7d2cc;
   position: absolute;
   bottom: 20px;
   right: 10px;
@@ -342,7 +356,7 @@ body{
 
 #product1 .pro a.cart i {
   font-size: 16px;
-  color: #088178;
+  color: var(--color-primary);
 }
 
 #banner{
@@ -472,19 +486,19 @@ body{
   background-image: url(img/banner/b14.png);
   background-repeat: no-repeat;
   background-position:20% 30% ;
-  background-color: var(--color-muted);
+  background-color: var(--color-text);
 }
 
 #newsletter h4{
   font-size:22px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 }
 
 #newsletter p{
   font-size:14px;
   font-weight: 600;
-  color: #818ea0;
+  color: var(--color-muted);
 }
 
 #newsletter p span{
@@ -520,7 +534,8 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--color-accent);
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 footer .col{
@@ -1052,7 +1067,7 @@ footer .copyright{
     right: -300px;
     height: 100vh;
     width: 300px;
-    background-color: #E3E6F2;
+    background-color: var(--color-background);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
     transition: 0.3s;
@@ -1072,7 +1087,7 @@ footer .copyright{
 }
 
 #mobile i{
-  color: #1a1a1a;
+  color: var(--color-text);
   font-size: 24px;
   padding-left: 20px;
 }
