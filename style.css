@@ -388,8 +388,8 @@ body{
 }
 
 #banner button:hover{
-  background: #088178;
-  color: #fff;
+  background: var(--color-button-hover);
+  color: var(--color-text);
 }
 
 #sm-banner{
@@ -523,7 +523,7 @@ body{
 }
 
 #newsletter button{
-  background-color: #088178;
+  background-color: var(--color-button);
   color: #fff;
   white-space: nowrap;
   border-top-left-radius: 0;
@@ -893,7 +893,7 @@ footer .copyright{
 
 #form-details form button{
   color: #fff;
-  background-color: #088178;
+  background-color: var(--color-button);
 }
 
 #form-details .people div{
@@ -1022,7 +1022,7 @@ footer .copyright{
 
 #coupon button,
 #subtotal button{
-  background-color: #088178;
+  background-color: var(--color-button);
   color: #fff;
   padding: 12px 20px;
 }
