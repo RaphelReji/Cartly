@@ -37,6 +37,8 @@ It has six main pages:
 
 ![cart](readmeimg/6.png)
 
+![product](readmeimg/7.png)
+
 ## Product Page
 
 In the Shop page, you can see different technology products. When you click on the MacBook Air product, you will be taken to a dedicated product page created specifically for the MacBook Air.
